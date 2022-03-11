@@ -1,0 +1,96 @@
+@import "../../_base.scss";
+
+.videoHorizontal {
+	border-bottom: .3px solid $border-color;
+
+	cursor: pointer;
+
+	&__left {
+		position: relative;
+		text-align: center;
+		padding-left: 0 !important;
+	}
+
+	&__thumbnail {
+		width: 100%;
+		
+		&-wrapper {
+			width: 100%;
+		}
+
+		&-channel {
+			width: 50%;
+			border-radius: 50%;
+		}
+	}
+
+	&__duration {
+		position: absolute;
+		bottom: .6rem;
+		right: 1.3rem;
+		font-size: .9rem;
+		padding: .2rem;
+		background: #080808ec;
+		border-radius: 3px;
+	}
+
+	&__details {
+		font-size: .9rem;
+	}
+
+	&__title {
+		font-size: 1rem;
+		/*color: #fff;*/
+		letter-spacing: .1px;
+
+		@include line-clamp(2);
+	}
+
+	&__channel {
+		img {
+			width: 36px;
+			height: 36px;
+			border-radius: 50%;
+			margin-right: .5rem;
+			cursor: pointer;
+		}
+
+		p {
+		    display: flex;
+    		align-items: center;
+			font-size: .9rem;
+			@include line-clamp(1);
+		}
+	}
+}
+
+@media (max-width: $breakpoint-small) {
+	.videoHorizontal {
+		font-size: 12px;
+
+		&__details {
+			@include line-clamp(1);
+		}
+
+		&__channel {
+			margin: .1rem 0;
+
+			img {
+				display: none;
+			}
+
+			p {
+				font-size: .9rem;
+			}
+		}
+
+		/*&__desc {
+			display: none;
+		}*/
+
+		&__title {
+			font-size: 14px;
+			@include line-clamp(2);
+		}
+	}
+}

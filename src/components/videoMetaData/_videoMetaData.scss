@@ -1,0 +1,72 @@
+@import "../../_base.scss";
+
+.videoMetaData {
+	&__top {
+		&__btn {
+			cursor: pointer;
+		    border-radius: 4px;
+		    padding: 3px;
+		    position: relative;
+		    transition: all .3s;
+
+		    &:hover {
+		    	background: #2a2b2c;
+		    }
+		}
+
+		&__copyAlert {
+		    position: absolute;
+		    bottom: 0%;
+		    font-size: 13px;
+		    background: green;
+		    border-radius: 5px;
+		    padding: 4%;
+		    opacity: 0;
+		    transition: .5s;
+		}
+	}
+
+	&__channel {
+		border-top: .2px solid $border-color;
+		border-bottom: .2px solid $border-color;
+		cursor: pointer;
+
+		img {
+			width: 50px;
+			height: 50px;
+		}
+
+		button {
+			background: red;
+			color: #fff;
+			border-radius: 0;
+			border: 0;
+			outline: 0;
+			text-transform: uppercase;
+			letter-spacing: .5px;
+
+			&:hover {
+				color: #fff;
+			}
+
+			&:focus {
+				border: 0;
+				outline: 0;
+			}
+		}
+	}
+
+	&__description {
+		font-size: .9rem;
+		white-space: pre-line;
+		border-bottom: .2px solid $border-color;
+	
+		.showMoreText {
+			text-decoration: none;
+			display: block;
+			margin: 1rem 0;
+			color: #fff;
+			font-weight: 500;
+		}
+	}
+}

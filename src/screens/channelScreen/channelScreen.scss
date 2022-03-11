@@ -1,0 +1,60 @@
+@import "../../_base.scss";
+
+.channelHeader {
+	border-bottom: 1px solid $border-color;
+
+	&__logo {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+	}
+
+	button {
+		text-transform: uppercase;
+		background: red;
+		color: #fff;
+		font-size: 1rem;
+		padding: .4rem;
+		border: 0;
+		outline: 0;
+	}
+
+	.channelBanner {
+		height: 16vw;
+	    background-position: 0;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-origin: padding-box;
+	    background-attachment: scroll;
+	    background-clip: border-box;
+	}
+}
+
+@media (max-width: $breakpoint-medium) {
+	.channelHeader {
+		padding: 1rem 0;
+
+		&__logo {
+			width: 50px;
+			height: 50px;
+		}
+
+		h3 {
+			font-size: 1rem;
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.channelHeader .channelHeader__details {
+		padding: 0 !important;	
+	}	
+}
+
+@media (max-width: 600px) {
+	.channelHeader__logo {
+	    width: 42px;
+    	height: 42px;
+	}
+}

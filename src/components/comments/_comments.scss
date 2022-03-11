@@ -1,0 +1,29 @@
+.comment__form {
+	img {
+		width: 50px;
+		height: 50px;
+		object-fit: contain;
+	}
+
+	input {
+		background: transparent;
+		border: 0;
+		border-bottom: 2px solid #353946;
+		color: #fff;
+
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	button {
+		background: #353956;
+		color: #fff;
+		letter-spacing: .5px;
+
+		&:focus {
+			border: 0;
+			outline: 0;
+		}
+	}
+}
