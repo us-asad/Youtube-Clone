@@ -84,7 +84,7 @@ This is an example of how to list things you need to use the software and how to
    const request = axios.create({
       baseURL: "https://youtube.googleapis.com/youtube/v3/",
       params : {
-        key: // Your Youtube Api Key
+        key: "Your-Youtube-Api-Key" // Paste here your YouTube Api Key
       }
    });
    ```
