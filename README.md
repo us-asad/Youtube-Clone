@@ -88,7 +88,7 @@ This is an example of how to list things you need to use the software and how to
       }
    });
    ```
-6. Enter your Firebase Config Object in `src/api.js`
+6. Enter your Firebase Config Object in `src/firebase.js`
    ```js
    const firebaseConfig = {
       // Initialize Firebase
